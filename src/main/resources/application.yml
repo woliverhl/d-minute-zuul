@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    my-service:
+      path: /dminute/**
+      serviceId: dminutems
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_ENDPOINT}
