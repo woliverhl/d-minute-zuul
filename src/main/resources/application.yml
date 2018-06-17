@@ -1,10 +1,28 @@
-zuul:
-  routes:
-    my-service:
-      path: /dminute/**
-      serviceId: dminutems
+server:
+  port: ${ZUUL_PORT:8080}
 
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+    com.atsistemas: 'DEBUG'
+ 
+# Discovery Server Access
 eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_ENDPOINT}
+
+# ZUul Routes      
+zuul:
+  prefix: /api
+  routes:
+    dminute:
+      path: /dminute/**
+      service-id: dminutems
+      strip-prefix: true
+    test:
+      path: /sad/**
+      service-id: sadr
+      strip-prefix: true
