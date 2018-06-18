@@ -30,7 +30,7 @@ zuul:
       path: /sad/**
       service-id: sadr
       strip-prefix: true
-     second:
+    second:
       path: /demo/**
       service-id: MY-SERVICE
       strip-prefix: true
