@@ -18,11 +18,11 @@ eureka:
     
 # ZUul Routes      
 zuul:
+  sensitive-headers: Cookie,Set-Cookie,Authorization
   prefix: /api
   routes:
     dminute:
       path: /dminute/**
-      sensitive-headers: Cookie,Set-Cookie,Authorization
       service-id: dminutems
       strip-prefix: true
     test:
