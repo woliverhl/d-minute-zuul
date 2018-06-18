@@ -34,5 +34,5 @@ zuul:
       service-id: MY-SERVICE
       strip-prefix: true
     front:
-      path: /front/**
-      url: front-dminute.herokuapp.com
+      path: /front/
+      url: https://front-dminute.herokuapp.com/
