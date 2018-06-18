@@ -22,7 +22,7 @@ zuul:
   routes:
     dminute:
       path: /dminute/**
-      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      sensitiveHeaders:
       service-id: dminutems
       strip-prefix: true
     test:
