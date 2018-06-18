@@ -13,6 +13,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_ENDPOINT}
+  instance:
+    hostname: ${DOMAIN_NAME}
+    nonSecurePort: 80
+      
 
 # ZUul Routes      
 zuul:
@@ -25,4 +29,8 @@ zuul:
     test:
       path: /sad/**
       service-id: sadr
+      strip-prefix: true
+     demo:
+      path: /demo/**
+      service-id: MY-SERVICE
       strip-prefix: true
