@@ -15,9 +15,7 @@ eureka:
       defaultZone: ${EUREKA_ENDPOINT}
   instance:
     hostname: ${DOMAIN_NAME}
-    nonSecurePort: 80
-      
-
+    
 # ZUul Routes      
 zuul:
   prefix: /api
