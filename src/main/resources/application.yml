@@ -19,6 +19,8 @@ eureka:
 # ZUul Routes      
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie
+  add-proxy-headers: true
+  remote-ip-header: x-forwarded-host
   prefix: /api
   routes:
     dminute:
@@ -34,5 +36,5 @@ zuul:
       service-id: MY-SERVICE
       strip-prefix: true
     front:
-      path: /resource/**/*.html
-      url: https://front-dminute.herokuapp.com/
+      context-path: /ui/**
+      url: https://front-dminute.herokuapp.com
