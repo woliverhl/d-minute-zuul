@@ -1,6 +1,6 @@
 server:
   port: ${ZUUL_PORT:8080}
-  context-path: /ui
+  context-path: /api/ui
   tomcat:
     remote-ip-header: x-forwarded-host
 
@@ -23,7 +23,6 @@ eureka:
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie
   add-proxy-headers: true
-  remote-ip-header: x-forwarded-host
   prefix: /api
   routes:
     dminute:
@@ -40,4 +39,4 @@ zuul:
       strip-prefix: true
     front:
       path: /ui/**
-      url: https://front-dminute.herokuapp.com
+      url: https://front-dminute.herokuapp.com/
