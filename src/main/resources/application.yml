@@ -37,5 +37,5 @@ zuul:
       strip-prefix: true
     front:
       path: /ui/**
-      url: https://front-dminute.herokuapp.com/
+      url: https://front-dminute.herokuapp.com
       strip-prefix: false
