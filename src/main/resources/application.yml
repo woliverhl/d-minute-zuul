@@ -2,7 +2,7 @@ server:
   port: ${ZUUL_PORT:8080}
   context-path: /api/ui
   tomcat:
-    remote-ip-header: x-forwarded-host
+    remote-ip-header: https://front-dminute.herokuapp.com/
 
 logging:
   file: logs/${spring.application.name}.log
