@@ -38,3 +38,8 @@ zuul:
     front:
       path: /ui/**
       url: https://front-dminute.herokuapp.com
+server:
+  context-path: /ui
+  port: 8081
+  tomcat:
+    remote-ip-header: x-forwarded-host
