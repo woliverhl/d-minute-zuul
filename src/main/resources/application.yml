@@ -19,8 +19,7 @@ eureka:
 # ZUul Routes      
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie
-  ignoreSecurityHeaders: true
-  add-proxy-headers: true
+  ignoreSecurityHeaders: false
   prefix: /api
   routes:
     dminute:
