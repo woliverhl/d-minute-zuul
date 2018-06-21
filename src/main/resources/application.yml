@@ -19,6 +19,7 @@ eureka:
 # ZUul Routes      
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   prefix: /api
   routes:
     dminute:
