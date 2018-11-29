@@ -24,7 +24,7 @@ zuul:
   routes:
     dminute:
       path: /dminute/**
-      service-id: dminute-ms
+      service-id: dminutems
       strip-prefix: true
     test:
       path: /sad/**

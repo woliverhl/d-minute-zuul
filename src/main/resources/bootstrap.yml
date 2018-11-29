@@ -1,3 +1,7 @@
 spring:
   application:
     name: zuulserver
+  cloud:
+    config:
+      failFast: true
+      uri: ${CONFIG_SERVER_DMINUTE}
