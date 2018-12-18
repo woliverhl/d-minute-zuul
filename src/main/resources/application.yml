@@ -26,15 +26,7 @@ zuul:
       path: /dminute/**
       service-id: dminutems
       strip-prefix: true
-    test:
-      path: /sad/**
-      service-id: sadr
-      strip-prefix: true
-    second:
-      path: /demo/**
-      service-id: MY-SERVICE
-      strip-prefix: true
     front:
       path: /ui
-      url: https://front-dminute.herokuapp.com
+      url: https://172.17.0.8:8180
       strip-prefix: false
