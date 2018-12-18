@@ -27,6 +27,6 @@ zuul:
       service-id: dminutems
       strip-prefix: true
     front:
-      path: /ui
+      path: /ui/**
       url: https://172.17.0.8:8180
       strip-prefix: false
