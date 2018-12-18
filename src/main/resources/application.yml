@@ -28,5 +28,5 @@ zuul:
       strip-prefix: true
     front:
       path: /ui/**
-      url: https://172.17.0.8:8180
+      url: http://172.17.0.8:8180
       strip-prefix: false
